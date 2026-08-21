@@ -1,4 +1,4 @@
-# Rameez Karamat Bhatti — Portfolio
+# Rameez Karamat — Portfolio
 
 A fast, responsive, single-page portfolio for **rameezmeans.github.io**. It uses plain HTML, CSS, and JavaScript, so there is no framework, package installation, or build step.
 
@@ -25,7 +25,7 @@ GitHub will publish the site at [https://rameezmeans.github.io](https://rameezme
 ## Personalize
 
 - Update project descriptions and metrics in `index.html` whenever work changes.
-- Replace `assets/rameez-karamat-bhatti-resume.pdf` with a newer résumé using the same filename.
+- Replace `assets/rameez-karamat-resume.pdf` with a newer résumé using the same filename.
 - Contact and social links are near the end of `index.html`.
 - Theme, layout, and responsive rules live in `styles.css`.
 
@@ -40,7 +40,7 @@ GitHub will publish the site at [https://rameezmeans.github.io](https://rameezme
 ├── robots.txt
 ├── sitemap.xml
 ├── assets/
-│   └── rameez-karamat-bhatti-resume.pdf
+│   └── rameez-karamat-resume.pdf
 └── README.md
 ```
 
