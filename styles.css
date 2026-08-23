@@ -137,6 +137,24 @@ h2 em { color: var(--orange); font-style: normal; }
 .consistency-stack strong i { display: inline-block; width: .38rem; height: .38rem; margin-right: .28rem; border-radius: 50%; background: var(--acid); box-shadow: 0 0 0 .18rem rgba(200,241,53,.12); }
 .visual-quote { position: relative; z-index: 1; margin: 1.5rem 0 0; font-size: clamp(1.2rem, 2vw, 1.8rem); line-height: 1.15; letter-spacing: -.04em; }
 .tactica-info .project-lead { max-width: 40rem; }
+.founders-project { margin-bottom: clamp(1.25rem, 3vw, 3rem); }
+.project-visual.founders-visual { background: #174b43; color: var(--paper-bright); }
+.project-visual.founders-visual::before, .project-visual.founders-visual::after { border-color: rgba(200,241,53,.22); }
+.review-document { position: relative; z-index: 1; width: min(84%, 29rem); height: 21rem; margin: 2rem auto 0; }
+.review-sheet { position: absolute; inset: 0; border-radius: .2rem; background: var(--paper-bright); box-shadow: 0 2rem 4rem rgba(7,27,24,.28); }
+.review-sheet-back { transform: rotate(-8deg) translate(-.6rem,.5rem); opacity: .45; }
+.review-sheet-middle { transform: rotate(5deg) translate(.8rem,.15rem); opacity: .75; }
+.review-sheet-front { padding: clamp(1.3rem, 3vw, 2.4rem); color: var(--ink); transform: rotate(-1.5deg); }
+.review-sheet-head { display: flex; justify-content: space-between; padding-bottom: .75rem; border-bottom: 1px solid var(--line); font-family: "DM Mono", monospace; font-size: .52rem; letter-spacing: .06em; }
+.review-sheet-head b { color: #167565; }
+.review-sheet h4 { margin: 1.25rem 0 1.5rem; font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: .9; letter-spacing: -.055em; }
+.review-score { display: grid; grid-template-columns: 5.2rem 1fr; align-items: center; gap: .6rem; margin: .75rem 0; }
+.review-score span { font-family: "DM Mono", monospace; font-size: .47rem; }
+.review-score > i { display: block; height: .25rem; background: #deddd6; overflow: hidden; }
+.review-score > i b { display: block; height: 100%; background: #167565; }
+.review-phases { display: grid; grid-template-columns: repeat(3,1fr); gap: .4rem; margin-top: 1.4rem; }
+.review-phases span { padding: .35rem; background: #e8eadf; color: #35584f; text-align: center; font-family: "DM Mono", monospace; font-size: .44rem; }
+.founders-info .project-lead { max-width: 40rem; }
 .project-visual { position: relative; overflow: hidden; background: var(--acid); padding: clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: space-between; }
 .project-visual::before, .project-visual::after { content: ""; position: absolute; border: 1px solid rgba(23,23,20,.25); border-radius: 50%; width: 32rem; height: 32rem; right: -14rem; top: -12rem; }
 .project-visual::after { width: 18rem; height: 18rem; right: -7rem; top: -5rem; }
@@ -207,7 +225,7 @@ h2 em { color: var(--orange); font-style: normal; }
   .hero-actions { justify-content: flex-start; }.hero-proof { grid-template-columns: repeat(3, 1fr); }.hero-proof-note { display: none !important; }
   .about-copy { max-width: 45rem; }.capabilities-heading { align-items: start; }.capability { grid-template-columns: 3rem 1fr; }.capability ul { grid-column: 2; display: flex; flex-wrap: wrap; gap: 0 1rem; }
   .work-intro { grid-template-columns: 1fr; }.work-intro > p { max-width: 35rem; }.project { grid-template-columns: 1fr; }.project-visual { min-height: 28rem; }.project-info { min-height: 36rem; }
-  .tactica-info { min-height: 42rem; }
+  .tactica-info { min-height: 42rem; }.founders-info { min-height: 48rem; }
 }
 
 @media (max-width: 620px) {
@@ -216,6 +234,7 @@ h2 em { color: var(--orange); font-style: normal; }
   .capability { grid-template-columns: 2rem 1fr; gap: 1rem; }.capability p { font-size: .9rem; }.capability ul { font-size: .61rem; }
   .project-visual { min-height: 22rem; }.workflow { padding: 2.5rem .7rem; }.workflow b { padding: .45rem; }.project-info { min-height: 34rem; }.case-study > div { grid-template-columns: 1fr; gap: .3rem; }
   .tactica-journey { padding: 1.8rem .7rem; gap: .25rem; }.tactica-journey b { padding: .4rem .35rem; font-size: .43rem; }.tactica-info { min-height: 44rem; }
+  .review-document { width: 88%; height: 18rem; }.review-sheet-front { padding: 1.25rem; }.review-sheet h4 { margin: .9rem 0 1.1rem; }.founders-info { min-height: 51rem; }
   .project-grid { grid-template-columns: 1fr; }.project-card:nth-child(odd) { border-right: 0; }.project-card { min-height: 26rem; }.project-card h3 { font-size: 2.7rem; }
   .timeline-item { grid-template-columns: 1fr; gap: .5rem; }.resume-inner { align-items: flex-start; flex-direction: column; }.contact-top { align-items: flex-start; gap: 1.5rem; flex-direction: column; }.contact-main h2 { font-size: 15vw; }.contact-main > a { font-size: .9rem; }.footer { grid-template-columns: 1fr 1fr; }.footer-end { grid-column: 1 / -1; align-items: flex-start !important; text-align: left; gap: 1rem !important; }
 }
