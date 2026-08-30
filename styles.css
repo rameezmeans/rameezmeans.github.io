@@ -99,7 +99,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .skill-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
 .hero-statement { max-width: 31rem; justify-self: end; }
 .hero-statement > p { margin: 0; font-size: clamp(1.1rem, 1.8vw, 1.5rem); font-weight: 500; line-height: 1.35; }
-.hero-actions { display: flex; gap: 1.5rem; margin-top: 1.5rem; font-size: .82rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; margin-top: 1.5rem; font-size: .82rem; }
 .hero-actions a { padding-bottom: .18rem; border-bottom: 1px solid currentColor; }
 .hero-actions .accent-link { color: var(--accent); }
 
