@@ -127,7 +127,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .stat { padding: .85rem 0; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line-dark); }
 .stat strong { font-size: clamp(1.7rem, 2.7vw, 2.8rem); line-height: 1; font-weight: 500; letter-spacing: -.06em; }
 .stat strong small { font-size: .34em; letter-spacing: 0; }
+.stat strong sup { margin-left: .1em; color: var(--accent); font-size: .34em; line-height: 0; letter-spacing: 0; vertical-align: super; }
 .stat span { max-width: 7rem; color: var(--muted-dark); text-align: right; }
+.upwork-note { margin: 1rem 0 0; padding-left: .8rem; border-left: 2px solid var(--accent); color: var(--muted-dark); font-size: .78rem; line-height: 1.5; }
+.upwork-note strong { color: var(--accent); }
 .about-copy .section-label { margin-bottom: 2rem; }
 .about-copy > p:last-child { max-width: 41rem; margin: 2rem 0 0; color: var(--muted-dark); font-size: clamp(1.15rem, 1.7vw, 1.45rem); }
 
