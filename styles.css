@@ -103,6 +103,29 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-actions a { padding-bottom: .18rem; border-bottom: 1px solid currentColor; }
 .hero-actions .accent-link { color: var(--accent); }
 
+.featured-article {
+  padding: clamp(5rem, 9vw, 9rem) var(--pad);
+  background: var(--paper);
+  color: var(--ink);
+}
+.featured-article-inner {
+  max-width: calc(var(--max) - (var(--pad) * 2));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(10rem, .55fr) minmax(0, 1.45fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: start;
+}
+.featured-article-heading { display: flex; flex-direction: column; gap: .8rem; }
+.featured-article-meta { margin: 0; color: var(--muted-dark); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+.featured-article-copy h2 { max-width: 57rem; margin: 0 0 2rem; font-size: clamp(2.8rem, 5.3vw, 5.8rem); font-weight: 500; line-height: .94; letter-spacing: -.06em; }
+.featured-article-copy > p { max-width: 48rem; margin: 0 0 1rem; color: var(--muted-dark); font-size: clamp(1rem, 1.4vw, 1.2rem); line-height: 1.55; }
+.featured-article-link { display: inline-flex; gap: .7rem; margin-top: 1.2rem; padding-bottom: .22rem; border-bottom: 1px solid currentColor; font-size: .9rem; font-weight: 600; }
+.featured-article-link span { color: var(--accent); }
+.featured-article-image { grid-column: 1 / -1; display: block; margin-top: clamp(1rem, 3vw, 3rem); overflow: hidden; background: #031b36; border: 1px solid var(--line-dark); }
+.featured-article-image img { display: block; width: 100%; height: auto; transition: opacity .2s; }
+.featured-article-image:hover img, .featured-article-image:focus-visible img { opacity: .9; }
+
 .wrap { max-width: var(--max); margin: 0 auto; padding: clamp(7rem, 11vw, 11rem) var(--pad); }
 .section-label { margin: 0; color: var(--muted-dark); }
 .section-head { display: grid; grid-template-columns: .65fr 1.7fr auto; gap: 2rem; align-items: end; margin-bottom: clamp(4rem, 8vw, 8rem); }
@@ -254,6 +277,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .skill-list li { font-size: .75rem; }
   .hero-statement { justify-self: start; }
   .hero-statement > p { font-size: 1rem; }
+  .featured-article-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .featured-article-copy h2 { font-size: clamp(2.7rem, 13vw, 4.5rem); }
+  .featured-article-image { grid-column: auto; margin-top: .5rem; }
   .wrap { padding-top: 6rem; padding-bottom: 6rem; }
   .profile-grid { grid-template-columns: 1fr; }
   .profile-portrait { width: min(82vw, 22rem); }
