@@ -295,3 +295,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Project writing and education */
+.project-article { display: inline-block; margin-top: 1.2rem; padding-bottom: .2rem; border-bottom: 1px solid currentColor; color: var(--accent); font-size: .85rem; }
+.education { scroll-margin-top: 6rem; display: grid; grid-template-columns: .65fr 1.7fr; gap: 2rem; padding-top: 0; padding-bottom: clamp(4rem, 7vw, 7rem); }
+.education .section-label { color: var(--muted-light); padding-top: .5rem; }
+.education-details { border-top: 1px solid var(--line-light); padding-top: 1.5rem; }
+.education h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 500; letter-spacing: -.045em; }
+.education-details p { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin: 0; font-size: 1.1rem; }
+.education-details span { color: var(--muted-light); }
+@media (max-width: 700px) { .education { grid-template-columns: 1fr; padding-top: 0; } }
